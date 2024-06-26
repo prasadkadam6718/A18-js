@@ -181,18 +181,81 @@
 
 
 
-console.log("mai ghar se nikla")
-function shadi(gift) {
-  console.log(`shadi me khana khane chala gaya ${gift} lekar.`)
-}
-console.log("dost ke ghar gaya")
-shadi("flowers")
-shadi("flowers")
-shadi("flowers")
-shadi("flowers")
-shadi("flowers")
-shadi("flowers")
+// console.log("mai ghar se nikla")
+// function shadi(gift) {
+//   console.log(`shadi me khana khane chala gaya ${gift} lekar.`)
+// }
+// console.log("dost ke ghar gaya")
+// shadi("flowers")
+// shadi("flowers")
+// shadi("flowers")
+// shadi("flowers")
+// shadi("flowers")
+// shadi("flowers")
 
+
+
+
+
+// default parmeters
+
+// function introduction(name = "JohnDoe", email = "johndoe@gmail.com", phone = 9876544356, age = 34) {
+//   console.log(`my name is ${name}, email : ${email}, contact no : ${phone}, age : ${age}.`)
+// }
+
+// introduction("Prasad", "p@p.com", 9876543210, 100)
+// introduction("xyz", "xyz@gmail.com", 87567658765, 43)
+// introduction()
+
+
+
+// syntax for arrow function
+// let functionName = (parameters) => {
+//   // function body
+// }
+// functionName(arguments)
+
+
+// let func = (name) => {
+//   console.log("hello from arrow function" + " " + name)
+// }
+// func("parasd")
+
+
+// function for addition
+// let add = (a, b) => {
+//   console.log("addition of a and b is ", (a + b))
+// }
+// add(10, 2)
+
+
+// let add = (a, b) => {
+//   let output = a + b
+//   return output
+// }
+// console.log(add(20, 20))
+
+
+
+// let num1 = prompt("enter num1")
+// let num2 = prompt("enter num2")
+// // typecasting using Number()
+// let a = Number(num1)
+// // typecasting using parseInt()
+// let b = parseInt(num2)
+// console.log(a + b)
+
+
+
+// taking input from user using prompt and adding it using arrow function
+
+let num1 = parseInt(prompt("Enter Num1"))
+let num2 = parseInt(prompt("Enter Num2"))
+
+let add = (a, b) => {
+  return a + b, "hello"
+}
+console.log(`addition of ${num1} and ${num2} is =>>>>>`, add(num1, num2))
 
 
 
