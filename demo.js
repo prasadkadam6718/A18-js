@@ -249,13 +249,84 @@
 
 // taking input from user using prompt and adding it using arrow function
 
-let num1 = parseInt(prompt("Enter Num1"))
-let num2 = parseInt(prompt("Enter Num2"))
+// let num1 = parseInt(prompt("Enter Num1"))
+// let num2 = parseInt(prompt("Enter Num2"))
 
-let add = (a, b) => {
-  return a + b, "hello"
+// let add = (a, b) => {
+//   return a + b, "hello"
+// }
+// console.log(`addition of ${num1} and ${num2} is =>>>>>`, add(num1, num2))
+
+
+
+//! higher order and callback functions
+//! hof ex1
+
+// let a = (func) => {
+//   func()
+// }
+// let anyFunc = () => {
+//   console.log("anyFunc Executed")
+// }
+// a(anyFunc)
+// a(anyFunc)
+
+
+
+//! hof ex2
+
+// let hof = (cbf) => {
+//   cbf()
+// }
+// let cbf = () => {
+//   console.log("cbf executed")
+// }
+// hof(cbf)
+
+//! hof ex3
+// let operation = (task, num1, num2) => {
+//   task(num1, num2)
+// }
+
+// let add = (a, b) => {
+//   console.log(a + b)
+// }
+// operation(add, 10, 20)
+
+
+
+
+
+// let greeting = (person, typeOfGreeting) => {
+//   console.log(person(typeOfGreeting))
+// }
+// let nani = (typeOfGreeting) => {
+//   console.log(`hello nani with my ${typeOfGreeting} greeting`)
+// }
+// let friend = (typeOfGreeting) => {
+//   return `hello.. with my ${typeOfGreeting} greeting`
+// }
+// greeting(friend, "how are you")
+// // greeting(nani, "paay lagu..")
+
+
+
+
+
+let greeting = (person, type) => {
+  console.log(person(type))
 }
-console.log(`addition of ${num1} and ${num2} is =>>>>>`, add(num1, num2))
+let brother = (type) => {
+  return `hello brother.. ${type}`
+}
+
+greeting(brother, "paise wapas kab dega...?")
+
+
+
+
+
+
 
 
 
