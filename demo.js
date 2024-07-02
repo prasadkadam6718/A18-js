@@ -313,16 +313,162 @@
 
 
 
-let greeting = (person, type) => {
-  console.log(person(type))
-}
-let brother = (type) => {
-  return `hello brother.. ${type}`
-}
+// let greeting = (person, type) => {
+//   console.log(person(type))
+// }
+// let brother = (type) => {
+//   return `hello brother.. ${type}`
+// }
+// greeting(brother, "paise wapas kab dega...?")
 
-greeting(brother, "paise wapas kab dega...?")
 
 
+//! function without name is annonymous function
+// let demo = function () {
+//   console.log("demo function executed")
+// }
+// demo()
+
+//! named function
+// function action() {
+//   console.log("action")
+// }
+// action()
+
+
+//! function assigned to a variable is called as function as an expression
+// let func = () => {
+// console.log("func")
+// }
+// func()
+
+
+//! Immediate Invoke Function
+
+// (() => {
+//   console.log("iife")
+// })()
+
+
+
+
+// console.log("x")
+// let func = () => {
+//   console.log("y")
+// }
+// console.log("z")
+// func()
+
+// let a = 10
+// let func1 = () => {
+
+//   console.log("func1")
+// }
+// func1()
+
+
+
+// console.log("1")
+// let func = (a) => {
+//   console.log(a)
+// }
+// console.log("2")
+// func("xyz")
+// console.log("3")
+
+
+
+
+// window.alert("something went wrong")
+
+// window.console.log("hello")
+// var a1 = 10
+// let a2 = 20
+// console.log(window)
+
+
+
+
+// let a = 10
+// let func = () => {
+//   let m = "m"
+//   console.log("hello")
+// }
+// console.log("xyz")
+// func()
+
+
+// let que = "kaisi ho tum?"
+// let call = (que) => {
+//   console.log(que)
+//   return "mai Badiya..! tum kaise ho..?"
+// }
+// let reply = call(que)
+// console.log(reply)
+
+
+
+
+// console.log(b)
+// let a = 10
+// var b;
+// const c = 30;
+// console.log(b)
+
+
+
+
+
+
+// a = 20
+// console.log(window)
+
+
+
+
+// console.log(a)
+// let a = 10
+// console.log(a)
+// var b = 20
+// let func = () => {
+//   console.log(a, b)
+// }
+// func()
+
+
+
+
+// let a = 10
+// console.log(a)
+// let func = () => {
+//   console.log(a)
+// }
+// func()
+
+
+
+// let func = () => {
+//   return "Hello"
+// }
+// func()
+// console.log(func())
+
+
+
+// let a = 10
+// console.log(a)
+// if (true) {
+//   console.log(a)
+//   let b = 20
+// }
+// console.log(b)
+
+
+// let a = 0
+// while (a < 10) {
+//   console.log(a)
+//   a++
+// }
 
 
 
