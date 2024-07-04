@@ -472,6 +472,137 @@
 
 
 
+//! block scope (let and const are block scoped)
+// let a = "RRR"
+// if (true) {
+//   console.log(a)
+//   let b = "Kantara"
+//   const c = "Munjya"
+//   var d = "Kalki"
+// }
+// console.log(d)
+
+
+
+
+// let a = "Bahubali"
+// let func = () => {
+//   let b = "Pushpa"
+//   const c = "Mirzapur"
+//   var d = "Panchayat"
+// }
+// func()
+// console.log(d)
+
+
+
+
+// let a = () => {
+//   function b() {
+//     console.log("hellooo")
+//   }
+//   b()
+// }
+// a()
+
+
+
+// {
+//   let a = 10
+// }
+// console.log(a)
+
+
+
+// javascript Currying
+// let a = () => {
+//   console.log("a block executed")
+//   let b = () => {
+//     console.log("b block executed")
+//     let c = (value) => {
+//       console.log("c block executed with value  ==>", value)
+//     }
+//     return c
+//   }
+//   return b
+// }
+// a()()(10)
+
+
+
+
+
+// let a = () => {
+//   let val = 10
+//   let val1 = 20
+//   let val3 = 30
+//   let b = () => {
+//     console.log(val)
+//   }
+//   b()
+// }
+// a()
+
+
+
+// let fetch = () => {
+//   a = 10
+//   console.log(a)
+// }
+// fetch()
+// var a;
+
+
+
+
+// let minku = () => {
+//   let bike = "Splendor"
+//   let mobile = "Iphone"
+//   let tinku = () => {
+//     console.log("the bike is ===>>>", bike, mobile)
+//   }
+//   return tinku
+// }
+// let returnedFunc = minku()
+// returnedFunc()
+
+
+
+
+
+
+
+
+
+
+// let age = 15
+
+// if (18) {
+//   console.log("you are eligible for vote")
+// } else {
+//   console.log("tum se naa ho payega beta...!!!!")
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
