@@ -586,6 +586,110 @@
 
 
 
+// console.log(a)
+// var a;
+// a = 20
+// console.log(a)
+
+
+// let num = prompt("Enter the Number")
+// if (num % 2 == 0) {
+//   console.log(`${num} is an Even Number`)
+// } else {
+//   console.log(`${num} is an Odd Number`)
+// }
+
+
+
+
+// let isHungry = true
+// let isFishAvailable = false
+
+// if (isHungry) {
+//   console.log("cat is hungry")
+//   if (isFishAvailable) {
+//     console.log("Cat eats fish")
+//   } else {
+//     console.log("Cat drink Milk")
+//   }
+// }
+// else {
+//   console.log("cat is not hungry")
+// }
+
+
+// let username = "Prasad123"
+// let password = "12345"
+// let u = prompt("enter username")
+// let p = prompt("enter password")
+// if (username == u) {
+//   if (password == p) {
+//     console.log("Logged in Successfully")
+//   } else {
+//     console.log("Wrong password")
+//   }
+// } else {
+//   console.log("wrong username")
+// }
+
+
+
+
+
+
+// let username = "Prasad123"
+// let password = "12345"
+// let u = prompt("enter username")
+// let p = prompt("enter password")
+// if (username == u && password == p) {
+//   console.log("Loggedin Successfully")
+// } else {
+//   console.log("Wrong Credentials")
+// }
+
+
+
+
+
+
+// let username = "Prasad123";
+// let password = "12345";
+// let u = prompt("enter username");
+// let p = prompt("enter password");
+// (username == u && password == p) ? console.log("Logged in Successfully") : console.log("Wrong Credentials");
+
+
+// let isHungry = true
+// let isFishAvailable = false
+
+// !isHungry ? console.log("cat is not hungry") : (
+//   isFishAvailable ? console.log("cat eats fish") : console.log("cat drinks milk")
+// )
+
+
+let takla = prompt("enter your name")
+switch (takla) {
+  case "Sushant": console.log(`${takla} ka mobile number ==>> 987987687`); break;
+  case "Deepak": console.log(`${takla} ka mobile number ==>> 876248757`); break;
+  case "Vishal": console.log(`${takla} ka mobile number ==>> 876876877`); break;
+  case "Aashu": console.log(`${takla} ka mobile number ==>> 875687587`); break;
+  default: console.log("tumhara naam is list me nahi he")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
