@@ -667,22 +667,310 @@
 // )
 
 
-let takla = prompt("enter your name")
-switch (takla) {
-  case "Sushant": console.log(`${takla} ka mobile number ==>> 987987687`); break;
-  case "Deepak": console.log(`${takla} ka mobile number ==>> 876248757`); break;
-  case "Vishal": console.log(`${takla} ka mobile number ==>> 876876877`); break;
-  case "Aashu": console.log(`${takla} ka mobile number ==>> 875687587`); break;
-  default: console.log("tumhara naam is list me nahi he")
+// let takla = prompt("enter your name")
+// switch (takla) {
+//   case "Sushant": console.log(`${takla} ka mobile number ==>> 987987687`); break;
+//   case "Deepak": console.log(`${takla} ka mobile number ==>> 876248757`); break;
+//   case "Vishal": console.log(`${takla} ka mobile number ==>> 876876877`); break;
+//   case "Aashu": console.log(`${takla} ka mobile number ==>> 875687587`); break;
+//   default: console.log("tumhara naam is list me nahi he")
+// }
+
+
+
+
+// console.log("hello")
+
+// for (let i = 10; i >= 1; i--) {
+//   console.log("hello", i)
+// }
+
+
+
+// let i = 0
+// while (i > 10) {
+//   console.log("hello", i)
+//   i++
+// }
+// let i = 0
+// do {
+//   console.log("hello", i)
+// } while (i > 10)
+
+
+
+
+//! Objects
+
+
+//! creating object with object literal way
+// let obj = {
+//   name: "Prasad"
+// }
+// console.log(obj)
+// obj.add = "Noida"
+// console.log(obj)
+// obj.name = "XYZ"
+// console.log(obj)
+
+
+//! creating object with new keyword
+
+// let objWithNewKeyword = new Object({ name: "Tinku" })
+// console.log(objWithNewKeyword)
+// objWithNewKeyword.add = "Noida"
+// console.log(objWithNewKeyword)
+
+
+// let student1 = {
+//   name: "Tinku",
+//   add: "Noida",
+//   mob : 876875746
+// }
+
+// let student2= {
+//   name: "Tinku",
+//   add: "Noida",
+//   mob : 876875746
+// }
+
+// let student3 = {
+//   name: "Tinku",
+//   add: "Noida",
+//   mob : 876875746
+// }
+
+//! creating object using factory function
+// function students(name, add, mob) {
+//   return {
+//     name: name,
+//     add: add,
+//     mob: mob
+//   }
+// }
+// let student1 = students("tinku", "Noida", 98676544)
+// let student2 = students("pinku", "Noida", 98676544)
+// let student3 = students("minku", "Noida", 98676544)
+// let student4 = students("rinku", "Noida", 98676544)
+// console.log(student1, student2, student3, student4)
+
+
+
+
+
+//! creating object using class
+
+// class Car {
+//   constructor(name, brand, price) {
+//     this.name = name
+//     this.brand = brand
+//     this.price = price
+//   }
+// }
+// let car1 = new Car("Mustang", "Ford", "1cr")
+// let car2 = new Car("Fortuner", "Toyota", "0.5cr")
+// let car3 = new Car("WagonR", "Maruti", "8L")
+// console.log(car1, car2, car3)
+
+
+
+//! delete the properties from an object
+
+
+// let obj = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// console.log(obj)
+// delete obj.add
+// console.log(obj)
+
+//! we can create nested objects
+// let country = {
+//   name: "India",
+//   state: {
+//     name: "Uttar-pradesh",
+//     district: {
+//       name: "Gautambuddha Nagar",
+//       city: {
+//         name: "Noida",
+//         sector: {
+//           name: "sector 16",
+//         }
+//       }
+//     }
+//   }
+// }
+// console.log(country.state.district.city.sector.name)
+
+
+
+// let myApi = [
+//   {
+//     name: "India",
+//     state: {
+//       name: "Uttar-pradesh",
+//       district: {
+//         name: "Gautambuddha Nagar",
+//         city: {
+//           name: "Noida",
+//           sector: {
+//             name: "sector 16",
+//           }
+//         }
+//       }
+//     }
+//   },
+//   {
+//     name: "India",
+//     state: {
+//       name: "Uttar-pradesh",
+//       district: {
+//         name: "Gautambuddha Nagar",
+//         city: {
+//           name: "Noida",
+//           sector: {
+//             name: "sector 16",
+//           }
+//         }
+//       }
+//     }
+//   },
+//   {
+//     name: "India",
+//     state: {
+//       name: "Uttar-pradesh",
+//       district: {
+//         name: "Gautambuddha Nagar",
+//         city: {
+//           name: "Noida",
+//           sector: {
+//             name: "sector 16",
+//           }
+//         }
+//       }
+//     }
+//   },
+//   {
+//     name: "India",
+//     state: {
+//       name: "Uttar-pradesh",
+//       district: {
+//         name: "Gautambuddha Nagar",
+//         city: {
+//           name: "Noida",
+//           sector: {
+//             name: "sector 16",
+//           }
+//         }
+//       }
+//     }
+//   },
+//   {
+//     name: "India",
+//     state: {
+//       name: "Uttar-pradesh",
+//       district: {
+//         name: "Gautambuddha Nagar",
+//         city: {
+//           name: "Noida",
+//           sector: {
+//             name: "sector 16",
+//           }
+//         }
+//       }
+//     }
+//   }
+// ]
+// console.log(myApi)
+
+
+
+
+//! creating an object using constructor function
+
+// let Students = function (name, add) {
+//   this.name = name
+//   this.add = add
+// }
+// let student1 = new Students("Tinku", "Noida")
+// console.log(student1)
+
+
+
+
+//! Object methods
+// let movie = {
+//   name: "Student of the year",
+//   year: 2012,
+//   actor: "Siddharth Malhotra",
+//   actress: "Alia Bhatt",
+//   villain: "Ram Kapoor",
+//   budget: "60cr",
+//   income: "110cr"
+// }
+// let allKeys = Object.keys(movie)
+// console.log(allKeys)
+// let allvalues = Object.values(movie)
+// console.log(allvalues)
+// let allEntries = Object.entries(movie)
+// console.log(allEntries)
+
+//!assign objects to an object
+// let student1 = { name: "Tinku" }
+// let student2 = { add: "Noida" }
+// let student3 = { contact: 9876543210 }
+// let student4 = { age: 22 }
+// Object.assign(student1, student2, student3, student4)
+// console.log(student1)// updated
+// console.log(student2)// as it is(not updated)
+
+
+// let movie = {
+//   name: "hera pheri",
+//   year: 2000,
+//   actor: {
+//     actor1: "Akshay kumar",
+//     actor: "Babu bhaiya",
+//     actor3: "Sunil shetty"
+//   },
+//   actress: {
+//     actress1: "Taboo",
+//     actress2: "Bipasha basu"
+//   },
+//   budget: "150rs",
+//   income: "1cr"
+// }
+// console.log(movie["actor"]["actor1"])
+// console.log(movie.hasOwnProperty("income"))
+// console.log("income" in movie)
+
+
+
+
+
+// let obj = {
+//   name: "Tinku"
+// }
+// Object.freeze(obj)
+// delete obj.name //!cant delete
+// obj.add = "Noida" //! cant add new property
+// obj.name = "Pinku" //! cant update existing properties
+// Object.seal(obj)
+// delete obj.name //!cant delete
+// obj.add = "Noida" //! cant add new property
+// obj.name = "Pinku" //! can update existing properties
+// console.log(obj)
+
+
+
+let obj = {
+  name: "Tinku"
 }
-
-
-
-
-
-
-
-
+Object.freeze(obj)
+Object.seal(obj)
+console.log(Object.isFrozen(obj))
+console.log(Object.isSealed(obj))
 
 
 
