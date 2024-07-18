@@ -964,13 +964,97 @@
 
 
 
+// let obj = {
+//   name: "Tinku"
+// }
+// Object.freeze(obj)
+// Object.seal(obj)
+// console.log(Object.isFrozen(obj))
+// console.log(Object.isSealed(obj))
+
+
+
+//! we can check whether the object is freezed/sealed or not
+// let obj = {
+//   name: "Tinku"
+// }
+// Object.seal(obj)
+// console.log(Object.isSealed(obj))
+
+
+
+//! creating objects using only variable names.
+// let name = "Tinku"
+// let phone = 9876534245
+// let add = "Noida"
+// let person = {name,phone,add}
+// console.log(person)
+
+
+
+
+
+// let obj1 = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// let copy = obj1
+// console.log(copy)
+// copy.phone = 9876543210
+// console.log(copy)
+// console.log(obj1)
+
+
+//! how to create deep copy
+//! 1.
+// let obj = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// let copy = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// copy.phone = 987687576
+// console.log(copy)
+// console.log(obj)
+
+
+//! 2. using for in loop
+// let obj = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// let copy = {}
+// for (a in obj) {
+//   copy[a] = obj[a]
+// }
+// // console.log(copy)
+// copy.phone = 987665346
+// console.log("copy ==>>>", copy)
+// console.log("obj ==>>>", obj)
+
+
+
+//! 3.using parse and stringify
+
 let obj = {
-  name: "Tinku"
+  name: "Tinku",
+  add: "Noida"
 }
-Object.freeze(obj)
-Object.seal(obj)
-console.log(Object.isFrozen(obj))
-console.log(Object.isSealed(obj))
+let copy = JSON.parse(JSON.stringify(obj))
+copy.phone = 9867542456
+console.log("obj ->", obj)
+console.log("copy ->", copy)
+
+
+
+
+
+
+
+
+
 
 
 
