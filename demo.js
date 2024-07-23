@@ -1038,14 +1038,380 @@
 
 //! 3.using parse and stringify
 
-let obj = {
-  name: "Tinku",
-  add: "Noida"
+// let obj = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// let copy = JSON.parse(JSON.stringify(obj))
+// copy.phone = 9867542456
+// console.log("obj ->", obj)
+// console.log("copy ->", copy)
+
+
+
+
+
+
+// let a = 10
+// function test() {
+//   console.log(this.a)
+// }
+// test()
+
+
+// let obj = {
+//   a: 10,
+//   test: function () {
+//     console.log(this.a)
+//   }
+// }
+// obj.test()
+
+// var a = 10
+// let obj = {
+//   // a: 10,
+//   test: () => {
+//     console.log(this)
+//   }
+// }
+// obj.test()
+
+
+
+// let func = () => {
+//   console.log(this)
+// }
+// func()
+
+
+
+
+// var a = "im variable declared with var keyword"
+// let func = () => {
+//   console.log(window.a)
+// }
+// func()
+
+// let obj = {
+//   a: 10,
+//   test: function () {
+//     console.log(this)
+//   }
+// }
+// obj.test()
+
+//! bind method
+// let obj = {
+//   name: "Tinku",
+//   age: 22,
+//   add: "Noida"
+// }
+// function info(a, b) {
+//   console.log(this.name)
+//   console.log(a + b)
+// }
+// let bindedFunc = info.bind(obj)
+// bindedFunc(10, 20)
+
+
+
+
+
+
+// let demo = [10, 20, 30, 40, "tinku", undefined, null, NaN, () => { }, {}, [10000, 20, [500, 20, [10, 20]]]]
+// console.log(demo[10][2][0])
+
+//! creating new array using array constructor and new keyword
+// let arr = new Array(10, 20, 30, 40)
+// console.log(arr)
+
+
+
+//! how to add new elemnets in an array in the last index (using push method)
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// nums.push(100)
+// console.log(nums)
+
+
+//! how to remove last element from an array(using pop method)
+
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// nums.pop()
+// console.log(nums)
+
+//! how to add new elemnet in an array in the starting index (using unshift method)
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// nums.unshift(1000)
+// console.log(nums)
+
+
+
+//! how to remove first element from an array(using shift method)
+
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// nums.shift()
+// console.log(nums)
+
+//! how to find index value of any array element
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let indexVal = nums.indexOf(643)
+// console.log("index Value of 643 is ", indexVal)
+
+
+//! how to access array element if we have its index value
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// console.log(nums[5])
+
+//! how to check whether the element is included in an given array or not
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let isIncluded = nums.includes(6430)
+// console.log(isIncluded)
+
+
+
+//! if we try to access any index value which doesnt exist in an array, instead of getting error we will get undefined.
+
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// console.log(nums[14])
+
+
+
+//! slice method
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let slicedArray = nums.slice(3, 10)
+// console.log(slicedArray)
+// console.log(nums) //! slice will not affect original array
+
+//! splice method
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let splicedArray = nums.splice(0, 2)
+// console.log(splicedArray)
+// console.log(nums) //! splice method will affect the original array
+
+
+//! reverse method to reverse the array elements
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// console.log("nums(original array) ", nums)
+// let reversedArr = nums.reverse()
+// console.log("reversed Array ", reversedArr)
+// console.log(nums) //! reverse will affect the original array
+
+
+
+// let obj = {
+//   name: "Tinku",
+//   add: "Noida"
+// }
+// let arr = Object.entries(obj)
+// console.log(arr)
+
+
+// let newObj = Object.fromEntries(arr)
+// console.log(newObj)
+
+
+
+
+//! how to convert array of entries into an object (using fromEntries method)
+// let arr = [
+//   ["name", "Tinku"],
+//   ["add", "Noida"]
+// ]
+// let obj = Object.fromEntries(arr)
+// console.log(obj)
+
+
+//! sort method
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// // let nums = [7, 3, 4, 9, 1, 4, 6, 8]
+// let arr = nums.sort((a, b) => {
+//   return a - b
+// })
+// console.log(arr)
+
+
+
+//! foreach method (HOF)
+// let nums = [7, 3, 4, 9, 1, 4, 6, 8]
+// let a = nums.forEach((value, index, arr) => {
+//   console.log(index + "," + (value + 100), arr)
+// })
+// console.log(a) //! foreach will not return anything
+// console.log(nums) //! foreach will not affect the original array
+
+// let nums = [7, 3, 4, 9, 1, 4, 6, 8]
+
+
+
+// let obj = {
+//   name: "Tinku",
+//   add: "noida"
+// }
+// let arr = Object.entries(obj)
+// console.log(arr)
+
+// let newObj = Object.fromEntries(arr)
+// console.log(newObj)
+
+
+
+
+// let func = () => {
+//   let obj = {
+//     name: "abc"
+//   }
+// }
+// func()
+
+
+
+
+// let arr = [62, 605, 333, 39]
+// let newArr = arr.sort((a, b) => {
+//   return a - b
+// })
+// console.log(newArr)
+
+
+
+
+// let arr = [62, 605, 333, 39]
+// let sum = 0
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i]
+// }
+// console.log(sum)
+
+
+
+
+// let arr = [62, 605, 333, 39]
+// let sum = 0
+// arr.forEach((val, i) => {
+//   sum += val
+// })
+// console.log(sum)
+
+
+// let arr = [2, 3, 4, 5]
+// let newArr = []
+// arr.forEach((val, i) => {
+//   console.log(val * val)
+//   newArr.push(val * val)
+// })
+// console.log(newArr)
+
+
+
+// let arr = 837[
+//   { name: "Tinki", age: 22 },
+//   { name: "Pinki", age: 24 },
+//   { name: "Rinki", age: 26 },
+//   { name: "Minki", age: 28 },
+// ]
+// arr.forEach((val) => {
+//   console.log(`my name is ${val.name}, and my age is ${val.age}`)
+// })
+// console.log(`my name is ${arr[0].name}, and my age is ${arr[0].age}`)
+// console.log(`my name is ${arr[1].name}, and my age is ${arr[1].age}`)
+// console.log(`my name is ${arr[2].name}, and my age is ${arr[2].age}`)
+// console.log(`my name is ${arr[3].name}, and my age is ${arr[3].age}`)
+
+
+
+
+
+
+
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let sum = 0
+// for (val of nums) {
+//   sum += val
+// }
+// console.log(sum)
+
+
+
+//! map method
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let a = nums.forEach((val, i, arr) => {
+//   return val + 1000
+// })
+// console.log(a);
+// let b = nums.map((val, i, arr) => {
+//   return val + 1000
+// })
+// console.log(b);
+
+
+
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let filteredArr = nums.filter((val) => {
+//   return 10
+// })
+// console.log(filteredArr);
+
+// let newArr = []
+// for (let i = 0; i < nums.length; i++) {
+//   if (nums[i] > 300) {
+//     newArr.push(nums[i])
+//   }
+// }
+// console.log(newArr);
+
+
+
+
+// let arr = [NaN, 10, 10.10, 10n, "hello"]
+// let newArr = arr.filter((val, i) => {
+//   console.log(typeof val);
+//   return (typeof val == "number")
+// })
+// console.log(newArr);
+
+
+
+//! reduce method
+// let nums = [675, 837, 753, 643, 53, 243, 9, 64]
+// let singleVal = nums.reduce((sum, val, i, arr) => {
+//   return sum += val
+// })
+// console.log(singleVal);
+
+
+
+// let arr = []
+// console.log(Array.isArray(arr));
+
+// let arr;
+
+// Array.isArray(arr) && arr.map((val, i) => {
+//   console.log(val);
+// })
+
+// arr = [10, 20, 30, 40]
+
+
+
+
+
+// let arr = [10, 20]
+
+// arr.length > 0 && arr.map((val, i) => {
+//   console.log(val);
+// })
+
+// arr = [10, 20, 30, 40]
+
+
+
+let name = ["T", "i", "n", "k", "u"]
+console.log(name.join(""));
+let str = ""
+for (let i = 0; i < name.length; i++) {
+  str += name[i]
 }
-let copy = JSON.parse(JSON.stringify(obj))
-copy.phone = 9867542456
-console.log("obj ->", obj)
-console.log("copy ->", copy)
+console.log(str);
 
 
 
@@ -1054,6 +1420,12 @@ console.log("copy ->", copy)
 
 
 
+
+// let sum = 0
+// for (let i = 0; i < nums.length; i++) {
+//   sum += nums[i]
+// }
+// console.log(sum);
 
 
 
