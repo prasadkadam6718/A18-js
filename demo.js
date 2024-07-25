@@ -1405,27 +1405,131 @@
 
 
 
-let name = ["T", "i", "n", "k", "u"]
-console.log(name.join(""));
-let str = ""
-for (let i = 0; i < name.length; i++) {
-  str += name[i]
-}
-console.log(str);
-
-
-
-
-
-
-
-
-
-// let sum = 0
-// for (let i = 0; i < nums.length; i++) {
-//   sum += nums[i]
+// let name = ["T", "i", "n", "k", "u"]
+// console.log(name.join(""));
+// let str = ""
+// for (let i = 0; i < name.length; i++) {
+//   str += name[i]
 // }
-// console.log(sum);
+// console.log(str);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//! destructuring
+
+
+// let bagpack = {
+//   item1: "Torch",
+//   item2: "Tiffin",
+//   item3: "Rope",
+//   item4: "Knife",
+//   item5: "Water bottle",
+//   item6: "1st aid box",
+//   item7: () => {
+//     console.log("fishing");
+//   }
+// }
+// let { item1, item2, item7 } = bagpack
+// console.log(bagpack.item1);
+// console.log(item1);
+// item7()
+
+
+// let arr = ["torch", "water bottle", "Knife", "blanket", {
+//   menu1: "ghewar",
+//   menu2: "petha"
+// }]
+// let [a, b, c, d, { menu1, menu2 }] = arr
+// console.log(menu1);
+
+
+// let arr = [10, 20, 30, 40, 50]
+// console.log(...arr);
+
+// let obj = {
+//   name: "Tinku",
+//   age: 23
+// }
+// console.log(...obj);
+
+
+// let arr = [10, 20, 30, 40, { name: "tinku" }, () => { console.log("func executed"); }]
+// let [a, b, ...c] = arr
+// console.log(c);
+// let [d, e, f, g] = c
+// g()
+
+//! how to create deep copy using spread operator
+// let arr = [10, 20, 30, 40, 50]
+// let nums = [...arr]
+// nums.push(60)
+// console.log(nums);
+// console.log(arr);
+
+
+
+// let arr = [10, 20, 30, 40, 50]
+
+// let func = (...a) => {
+//   console.log(a);
+// }
+// func(...arr)
+// func(10, 20, 30, 40, 50)
+
+// let obj = {
+//   name: "tinku"
+// }
+// let emptyobj = { ...obj }
+// emptyobj.age = 23
+// console.log(emptyobj);
+// console.log(obj);
+
+// let obj = {
+//   name: "Tinku"
+// }
+// console.log(obj);
+
+// let arr = [10, 20]
+// console.log(arr);
+
+// let a = Function().prototype
+// console.log(a);
+// console.log({}.__proto__);
+
+// let obj1 = {
+//   name: "Tinku"
+// }
+// let obj2 = {
+//   age: 23,
+//   add: "Noida"
+// }
+// obj1.__proto__ = obj2
+// console.log(obj1);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
